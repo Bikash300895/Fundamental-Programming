@@ -2,6 +2,7 @@ package main
 
 import(
 	"fmt"
+	"reflect"
 )
 
 var (
@@ -11,6 +12,7 @@ var (
 )
 
 func main() {
-	name = "Bikash"
+	name := "Bikash"
 	fmt.Println("The name is : ", name)
+	fmt.Println("The name type is : ", reflect.TypeOf(name))
 }
