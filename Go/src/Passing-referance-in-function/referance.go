@@ -21,12 +21,12 @@ func main() {
 	// Pointer
 	fmt.Println("The address of variable name is : ", &name)
 
-	changeCourse(name)
+	changeCourse(&name)
 	fmt.Println("The name is : ", name)
 }
 
-func changeCourse(name string) string {
-	name = "Roy"
-	fmt.Println("Inside function " + name)
-	return name
+func changeCourse(name *string) string {
+	*name = "Roy"
+	fmt.Println("Inside function " + *name)
+	return *name
 }
