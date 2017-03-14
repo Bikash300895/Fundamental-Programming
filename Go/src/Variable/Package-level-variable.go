@@ -5,11 +5,13 @@ import(
 	"reflect"
 )
 
+/*
 var (
 	name string
 	course string
 	module float64
 )
+*/
 
 func main() {
 	name := "Bikash"
