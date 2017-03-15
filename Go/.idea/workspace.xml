@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1c9eb79-b973-46d5-bdf4-daa48be0d00f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Condition/if.go" />
+    <list default="true" id="e1c9eb79-b973-46d5-bdf4-daa48be0d00f" name="Default" comment="Condition in go">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loop/for_the_only_loop.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,13 +21,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="if.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Condition/if.go">
+      <file leaf-file-name="for_the_only_loop.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/loop/for_the_only_loop.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+            <state relative-caret-position="221">
+              <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
               <folding>
-                <element signature="e#14#26#0" expanded="true" />
+                <element signature="e#14#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,6 +56,7 @@
         <option value="$PROJECT_DIR$/src/Functions/basic-function.go" />
         <option value="$PROJECT_DIR$/src/Variadic Functions/variadic-function.go" />
         <option value="$PROJECT_DIR$/src/Condition/if.go" />
+        <option value="$PROJECT_DIR$/src/loop/for_the_only_loop.go" />
       </list>
     </option>
   </component>
@@ -89,7 +90,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -120,7 +121,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Condition" />
+              <option name="myItemId" value="loop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -136,7 +137,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,14 +158,7 @@
       <recent name="C:\PROJECTS\Fundamental Programming\Go\src\Passing-referance-in-function" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Single File.go run if.go">
-    <configuration default="false" name="Build referance.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/Passing-referance-in-function/referance.go" />
-      <kind value="FILE" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Go Single File.go run for_the_only_loop.go">
     <configuration default="false" name="go run env-vars.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -187,6 +181,12 @@
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/src/Condition/if.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run for_the_only_loop.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/loop/for_the_only_loop.go" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -269,19 +269,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Application.Build referance.go and run" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run env-vars.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run basic-function.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run variadic-function.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run env-vars.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run basic-function.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run variadic-function.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run variadic-function.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run basic-function.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run env-vars.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Application.Build referance.go and run" />
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run variadic-function.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run basic-function.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run env-vars.go" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +296,8 @@
       <option name="presentableId" value="Default" />
       <updated>1489513588088</updated>
       <workItem from="1489513590717" duration="362000" />
-      <workItem from="1489513969188" duration="4969000" />
+      <workItem from="1489513969188" duration="5259000" />
+      <workItem from="1489617734538" duration="617000" />
     </task>
     <task id="LOCAL-00001" summary="Variable">
       <created>1489514059378</created>
@@ -340,11 +341,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489520003072</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Condition in go">
+      <created>1489521380481</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1489521380481</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5331000" />
+    <option name="totallyTimeSpent" value="6238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -354,7 +362,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49702382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -381,7 +389,8 @@
     <MESSAGE value="Environment variable" />
     <MESSAGE value="Go Basic functions" />
     <MESSAGE value="variadic function" />
-    <option name="LAST_COMMIT_MESSAGE" value="variadic function" />
+    <MESSAGE value="Condition in go" />
+    <option name="LAST_COMMIT_MESSAGE" value="Condition in go" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -390,29 +399,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Variable/Package-level-variable.go">
+    <entry file="file://$PROJECT_DIR$/src/Condition/if.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#41#0" expanded="true" />
+            <element signature="e#14#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Variable/Function-level-variable.go">
+    <entry file="file://$PROJECT_DIR$/src/Variable/Package-level-variable.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Variable/Function-level-variable.go" />
     <entry file="file://$PROJECT_DIR$/src/Passing-referance-in-function/referance.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -420,9 +428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#14#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -430,7 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -438,9 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -448,9 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -458,9 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#14#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -469,7 +464,17 @@
         <state relative-caret-position="153">
           <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding>
-            <element signature="e#14#26#0" expanded="true" />
+            <element signature="e#14#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loop/for_the_only_loop.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <element signature="e#14#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
