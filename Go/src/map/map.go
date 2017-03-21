@@ -14,4 +14,8 @@ func main() {
 
 	fmt.Println(leagueTitles)
 	fmt.Println(recent)
+
+	for key, value := range leagueTitles{
+		fmt.Println("\nKey is : %v, Value is %v", key, value)
+	}
 }
