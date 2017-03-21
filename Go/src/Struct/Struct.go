@@ -16,4 +16,5 @@ func main() {
 	}
 
 	fmt.Println(DockerDeepDive)
+	fmt.Println(DockerDeepDive.Author)
 }
