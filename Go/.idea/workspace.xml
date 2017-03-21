@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c9eb79-b973-46d5-bdf4-daa48be0d00f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Struct/Struct.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map/map.go" afterPath="$PROJECT_DIR$/src/map/map.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="map.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/map/map.go">
+      <file leaf-file-name="Struct.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Struct/Struct.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="221">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="e#14#26#0" expanded="true" />
               </folding>
@@ -61,6 +61,7 @@
         <option value="$PROJECT_DIR$/src/Slice/Slick.go" />
         <option value="$PROJECT_DIR$/src/Slice/Slice.go" />
         <option value="$PROJECT_DIR$/src/map/map.go" />
+        <option value="$PROJECT_DIR$/src/Struct/Struct.go" />
       </list>
     </option>
   </component>
@@ -125,7 +126,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="map" />
+              <option name="myItemId" value="Struct" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -162,13 +163,7 @@
       <recent name="C:\PROJECTS\Fundamental Programming\Go\src\Passing-referance-in-function" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Single File.go run map.go">
-    <configuration default="false" name="go run variadic-function.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/Variadic Functions/variadic-function.go" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Go Single File.go run Struct.go">
     <configuration default="false" name="go run if.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -191,6 +186,12 @@
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/src/map/map.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run Struct.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/Struct/Struct.go" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -273,19 +274,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run variadic-function.go" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run Slice.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run map.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run Slice.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run map.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run Struct.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run map.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run Slice.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run variadic-function.go" />
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run Struct.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run map.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run Slice.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +308,7 @@
       <workItem from="1489950044432" duration="1729000" />
       <workItem from="1490067530274" duration="29000" />
       <workItem from="1490106980389" duration="2532000" />
-      <workItem from="1490128080531" duration="488000" />
+      <workItem from="1490128080531" duration="1413000" />
     </task>
     <task id="LOCAL-00001" summary="Variable">
       <created>1489514059378</created>
@@ -386,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490109697949</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="looping in map in go">
+      <created>1490128583470</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1490128583470</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14284000" />
+    <option name="totallyTimeSpent" value="15209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -400,7 +408,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49702382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -432,7 +440,8 @@
     <MESSAGE value="range in for" />
     <MESSAGE value="Go Slice" />
     <MESSAGE value="Map in go" />
-    <option name="LAST_COMMIT_MESSAGE" value="Map in go" />
+    <MESSAGE value="looping in map in go" />
+    <option name="LAST_COMMIT_MESSAGE" value="looping in map in go" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -563,6 +572,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="e#14#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Struct/Struct.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="e#14#26#0" expanded="true" />
           </folding>
