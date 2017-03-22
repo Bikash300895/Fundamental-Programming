@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c9eb79-b973-46d5-bdf4-daa48be0d00f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Concurrency/Concure.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Struct/Struct.go" afterPath="$PROJECT_DIR$/src/Struct/Struct.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,13 +21,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Struct.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Struct/Struct.go">
+      <file leaf-file-name="Concure.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Concurrency/Concure.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            <state relative-caret-position="289">
+              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
-                <element signature="e#14#26#0" expanded="true" />
+                <element signature="e#14#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,6 +62,7 @@
         <option value="$PROJECT_DIR$/src/Slice/Slice.go" />
         <option value="$PROJECT_DIR$/src/map/map.go" />
         <option value="$PROJECT_DIR$/src/Struct/Struct.go" />
+        <option value="$PROJECT_DIR$/src/Concurrency/Concure.go" />
       </list>
     </option>
   </component>
@@ -126,7 +127,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Struct" />
+              <option name="myItemId" value="Concurrency" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -163,13 +164,7 @@
       <recent name="C:\PROJECTS\Fundamental Programming\Go\src\Passing-referance-in-function" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Single File.go run Struct.go">
-    <configuration default="false" name="go run if.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/Condition/if.go" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Go Single File.go run Concure.go">
     <configuration default="false" name="go run for_the_only_loop.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -192,6 +187,12 @@
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/src/Struct/Struct.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run Concure.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/Concurrency/Concure.go" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -274,19 +275,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run Slice.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run map.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run Struct.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run Slice.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run map.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run Struct.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run Concure.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run Struct.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run map.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run Slice.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run if.go" />
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run Concure.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run Struct.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run map.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run Slice.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run for_the_only_loop.go" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +309,7 @@
       <workItem from="1489950044432" duration="1729000" />
       <workItem from="1490067530274" duration="29000" />
       <workItem from="1490106980389" duration="2532000" />
-      <workItem from="1490128080531" duration="1548000" />
+      <workItem from="1490128080531" duration="3265000" />
     </task>
     <task id="LOCAL-00001" summary="Variable">
       <created>1489514059378</created>
@@ -401,11 +402,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490139060099</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="accessing specific field in struct">
+      <created>1490139202945</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1490139202945</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15344000" />
+    <option name="totallyTimeSpent" value="17061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -449,7 +457,8 @@
     <MESSAGE value="Map in go" />
     <MESSAGE value="looping in map in go" />
     <MESSAGE value="Go Struct" />
-    <option name="LAST_COMMIT_MESSAGE" value="Go Struct" />
+    <MESSAGE value="accessing specific field in struct" />
+    <option name="LAST_COMMIT_MESSAGE" value="accessing specific field in struct" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -592,6 +601,16 @@
           <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding>
             <element signature="e#14#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrency/Concure.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
