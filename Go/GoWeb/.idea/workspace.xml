@@ -2,52 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17155367-133e-434b-becf-dd94e072c40f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/apple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cart_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/durian.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/fruit.xcf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/kiwi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lemon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lemon_outline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/mangosteen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/people.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/pineapple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/social_media.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/strawberry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/tag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/watermelon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/video/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/_categories.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/_detail.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/_login.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/_members.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/_menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/_products.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/_profile.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/_standLocator.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/app.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/app.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/app.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/foundation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/foundation.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/foundation.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/foundation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/normalize.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/normalize.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/html/categories.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/html/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/html/product.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/html/products.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/tag.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/main.go" afterPath="$PROJECT_DIR$/src/main/main.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,8 +24,8 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="153">
+              <caret line="9" column="73" lean-forward="true" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
               <folding>
                 <element signature="e#14#49#0" expanded="true" />
               </folding>
@@ -154,28 +110,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="GoWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,7 +232,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490256404927</updated>
-      <workItem from="1490256406162" duration="3376000" />
+      <workItem from="1490256406162" duration="4224000" />
     </task>
     <task id="LOCAL-00001" summary="Http web response in localhost">
       <created>1490257032356</created>
@@ -314,17 +248,24 @@
       <option name="project" value="LOCAL" />
       <updated>1490278417082</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WebPage files added">
+      <created>1490278522284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490278522284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3376000" />
+    <option name="totallyTimeSpent" value="4224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20163691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20163691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -351,7 +292,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Http web response in localhost" />
     <MESSAGE value="Web request handeller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Web request handeller" />
+    <MESSAGE value="WebPage files added" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebPage files added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -368,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="153">
+          <caret line="9" column="73" lean-forward="true" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
           <folding>
             <element signature="e#14#49#0" expanded="true" />
           </folding>
