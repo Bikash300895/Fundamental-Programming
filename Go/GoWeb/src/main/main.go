@@ -15,7 +15,7 @@ func main() {
 		tmpl, err := template.New("test").Parse(doc)
 
 		if err == nil{
-			tmpl.Execute(w, nil)
+			tmpl.Execute(w, req.URL.Path)
 		}
 	})
 	http.ListenAndServe(":8000", nil)
@@ -26,7 +26,7 @@ const doc = `
 <html>
 	<head><title>Go</title></head>
 	<body>
-		<h1>Hi there</h1>
+		<h1>Hi {{.}}</h1>
 	</body>
 </html>
 `
