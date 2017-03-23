@@ -15,7 +15,8 @@ func main() {
 		tmpl, err := template.New("test").Parse(doc)
 
 		if err == nil{
-			tmpl.Execute(w, req.URL.Path)
+			context := Context{"the message"}
+			tmpl.Execute(w, context)
 		}
 	})
 	http.ListenAndServe(":8000", nil)
@@ -26,10 +27,14 @@ const doc = `
 <html>
 	<head><title>Go</title></head>
 	<body>
-		<h1>Hi {{.}}</h1>
+		<h1>Hi {{.Message}}</h1>
 	</body>
 </html>
 `
+
+type Context struct {
+	Message string
+}
 
 // Handeling request menually
 /*
