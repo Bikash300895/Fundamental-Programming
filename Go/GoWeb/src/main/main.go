@@ -15,8 +15,7 @@ func main() {
 		tmpl, err := template.New("test").Parse(doc)
 
 		if err == nil{
-			context := Context{"the message"}
-			tmpl.Execute(w, context)
+			tmpl.Execute(w, req.URL.Path)
 		}
 	})
 	http.ListenAndServe(":8000", nil)
@@ -27,7 +26,11 @@ const doc = `
 <html>
 	<head><title>Go</title></head>
 	<body>
-		<h1>Hi {{.Message}}</h1>
+	{{if eq . "/google"}}
+		<h1>Hey, Google made go </h1>
+	{{else}}
+		<h1>Hi {{.}}</h1>
+	{{end}}
 	</body>
 </html>
 `
