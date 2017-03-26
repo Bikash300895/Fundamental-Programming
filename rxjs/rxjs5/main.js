@@ -9,6 +9,9 @@ var MyOvservable = (function () {
     MyOvservable.prototype.next = function (value) {
         console.log("value : " + value);
     };
+    MyOvservable.prototype.error = function (e) {
+        console.log(e);
+    };
     MyOvservable.prototype.complete = function () {
         console.log("complete");
     };
