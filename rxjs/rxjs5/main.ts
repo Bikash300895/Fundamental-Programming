@@ -1,24 +1,32 @@
 import {Observable} from 'rxjs';
 
 let numbers = [1,2,3];
-let source = Observable.from(numbers);
-
-class MyOvservable{
-    next(value){
-        console.log(`value : ${value}`);
+let source = Observable.create(observer => {
+    for(let n in numbers){
+        observer.next(n);
     }
 
-    error(e){
-        console.log(e);
-    }
+    observer.complete();
+});
 
-    complete(){
-        console.log("complete");
-    }
-}
-
-source.subscribe(new MyOvservable());
-
+// let source = Observable.from(numbers);
+//
+// class MyOvservable{
+//     next(value){
+//         console.log(`value : ${value}`);
+//     }
+//
+//     error(e){
+//         console.log(e);
+//     }
+//
+//     complete(){
+//         console.log("complete");
+//     }
+// }
+//
+// source.subscribe(new MyOvservable());
+//
 // Observable with out class
 
 source.subscribe(
