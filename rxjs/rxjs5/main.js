@@ -14,7 +14,8 @@ var source = rxjs_1.Observable.create(function (observer) {
         }
     };
     produceValue();
-}).map(function (n) { return n * 2; });
+}).map(function (n) { return n * 2; })
+    .filter(function (n) { return n > 2; });
 // let source = Observable.from(numbers);
 //
 // class MyOvservable{
