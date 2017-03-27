@@ -18,3 +18,11 @@ class MyOvservable{
 }
 
 source.subscribe(new MyOvservable());
+
+// Observable with out class
+
+source.subscribe(
+    value => console.log(`value : ${value}`),
+    e => console.log(e),
+    () => console.log("Complete")
+);

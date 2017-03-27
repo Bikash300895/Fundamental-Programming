@@ -18,4 +18,6 @@ var MyOvservable = (function () {
     return MyOvservable;
 }());
 source.subscribe(new MyOvservable());
+// Observable with out class
+source.subscribe(function (value) { return console.log("value : " + value); }, function (e) { return console.log(e); }, function () { return console.log("Complete"); });
 //# sourceMappingURL=main.js.map
