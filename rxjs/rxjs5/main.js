@@ -1,21 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var rxjs_1 = require("rxjs");
-var numbers = [1, 2, 3];
-var source = rxjs_1.Observable.create(function (observer) {
-    var index = 0;
-    var produceValue = function () {
-        observer.next(numbers[index++]);
-        if (index < numbers.length) {
-            setTimeout(produceValue, 500);
-        }
-        else {
-            observer.complete();
-        }
-    };
-    produceValue();
-}).map(function (n) { return n * 2; })
-    .filter(function (n) { return n > 2; });
+var source = rxjs_1.Observable.fromEvent(document, "mousemove");
+// let numbers = [1,2,3];
+// let source = Observable.create(observer => {
+//     let index =0;
+//
+//     let produceValue = () =>{
+//         observer.next(numbers[index++]);
+//
+//         if(index<numbers.length){
+//             setTimeout(produceValue,500);
+//         } else {
+//             observer.complete();
+//         }
+//     }
+//
+//     produceValue();
+//
+// }).map(n=>n * 2)
+//     .filter( n => n>2)
 // let source = Observable.from(numbers);
 //
 // class MyOvservable{
@@ -35,5 +39,5 @@ var source = rxjs_1.Observable.create(function (observer) {
 // source.subscribe(new MyOvservable());
 //
 // Observable with out class
-source.subscribe(function (value) { return console.log("value : " + value); }, function (e) { return console.log(e); }, function () { return console.log("Complete"); });
+source.subscribe(function (value) { return console.log(value); }, function (e) { return console.log(e); }, function () { return console.log("Complete"); });
 //# sourceMappingURL=main.js.map
