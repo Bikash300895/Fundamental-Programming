@@ -7,14 +7,14 @@ var source = rxjs_1.Observable.create(function (observer) {
     var produceValue = function () {
         observer.next(numbers[index++]);
         if (index < numbers.length) {
-            setTimeout(produceValue, 2000);
+            setTimeout(produceValue, 500);
         }
         else {
             observer.complete();
         }
     };
     produceValue();
-});
+}).map(function (n) { return n * 2; });
 // let source = Observable.from(numbers);
 //
 // class MyOvservable{
