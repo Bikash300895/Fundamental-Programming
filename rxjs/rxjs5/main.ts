@@ -1,7 +1,14 @@
 import {Observable} from 'rxjs';
 
 
-let source = Observable.fromEvent(document, "mousemove");
+let source = Observable.fromEvent(document, "mousemove")
+    .map( (e:MouseEvent) =>{
+            return {
+                x:e.clientX,
+                y:e.clientY
+            }
+        }
+    ).filter(value => value.x<500);
 
 
 

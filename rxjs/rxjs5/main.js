@@ -1,7 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var rxjs_1 = require("rxjs");
-var source = rxjs_1.Observable.fromEvent(document, "mousemove");
+var source = rxjs_1.Observable.fromEvent(document, "mousemove")
+    .map(function (e) {
+    return {
+        x: e.clientX,
+        y: e.clientY
+    };
+}).filter(function (value) { return value.x < 500; });
 // let numbers = [1,2,3];
 // let source = Observable.create(observer => {
 //     let index =0;
