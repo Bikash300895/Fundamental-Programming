@@ -2,11 +2,20 @@ import {Observable} from 'rxjs';
 
 let numbers = [1,2,3];
 let source = Observable.create(observer => {
-    for(let n in numbers){
-        observer.next(n);
+    let index =0;
+
+    let produceValue = () =>{
+        observer.next(numbers[index++]);
+
+        if(index<numbers.length){
+            setTimeout(produceValue,2000);
+        } else {
+            observer.complete();
+        }
     }
 
-    observer.complete();
+    produceValue();
+
 });
 
 // let source = Observable.from(numbers);

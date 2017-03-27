@@ -3,10 +3,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var rxjs_1 = require("rxjs");
 var numbers = [1, 2, 3];
 var source = rxjs_1.Observable.create(function (observer) {
-    for (var n in numbers) {
-        observer.next(n);
-    }
-    observer.complete();
+    var index = 0;
+    var produceValue = function () {
+        observer.next(numbers[index++]);
+        if (index < numbers.length) {
+            setTimeout(produceValue, 2000);
+        }
+        else {
+            observer.complete();
+        }
+    };
+    produceValue();
 });
 // let source = Observable.from(numbers);
 //
