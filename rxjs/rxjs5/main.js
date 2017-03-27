@@ -4,7 +4,6 @@ var rxjs_1 = require("rxjs");
 //Getting the list of movies as an example of responding to http request
 var output = document.getElementById("output");
 var button = document.getElementById("button");
-// Handeling the click event
 var click = rxjs_1.Observable.fromEvent(button, "click");
 // let source = Observable.fromEvent(document, "mousemove")
 //     .map( (e:MouseEvent) =>{
@@ -57,17 +56,24 @@ var click = rxjs_1.Observable.fromEvent(button, "click");
 //     () => console.log("Complete")
 // );
 function load(url) {
-    var xhr = new XMLHttpRequest();
-    xhr.addEventListener("load", function () {
-        var movies = JSON.parse(xhr.responseText);
-        movies.forEach(function (m) {
-            var div = document.createElement("div");
-            div.innerText = m.title;
-            output.appendChild(div);
+    return rxjs_1.Observable.create(function (observer) {
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", function () {
+            var data = JSON.parse(xhr.responseText);
+            observer.next(data);
+            observer.complete();
         });
+        xhr.open("GET", url);
+        xhr.send();
     });
-    xhr.open("GET", url);
-    xhr.send();
 }
-click.subscribe(function (e) { return load("movies.json"); }, function (e) { return console.log(e); }, function () { return console.log("Complete"); });
+function renderMovies(movies) {
+    movies.forEach(function (m) {
+        var div = document.createElement("div");
+        div.innerText = m.title;
+        output.appendChild(div);
+    });
+}
+click.flatMap(function (e) { return load("movies.json"); })
+    .subscribe(renderMovies, function (e) { return console.log(e); }, function () { return console.log("Complete"); });
 //# sourceMappingURL=main.js.map
