@@ -1,14 +1,21 @@
 import {Observable} from 'rxjs';
 
+//Getting the list of movies as an example of responding to http request
+let output = document.getElementById("output");
+let button = document.getElementById("button");
 
-let source = Observable.fromEvent(document, "mousemove")
-    .map( (e:MouseEvent) =>{
-            return {
-                x:e.clientX,
-                y:e.clientY
-            }
-        }
-    ).filter(value => value.x<500);
+// Handeling the click event
+let click = Observable.fromEvent(button, "click");
+
+
+// let source = Observable.fromEvent(document, "mousemove")
+//     .map( (e:MouseEvent) =>{
+//             return {
+//                 x:e.clientX,
+//                 y:e.clientY
+//             }
+//         }
+//     ).filter(value => value.x<500);
 
 
 
@@ -54,8 +61,37 @@ let source = Observable.fromEvent(document, "mousemove")
 //
 // Observable with out class
 
-source.subscribe(
-    value => console.log(value),
+
+
+
+// source.subscribe(
+//     value => console.log(value),
+//     e => console.log(e),
+//     () => console.log("Complete")
+
+// );
+
+
+function load(url: string){
+    let xhr = new XMLHttpRequest();
+
+    xhr.addEventListener("load", ()=>{
+        let movies = JSON.parse(xhr.responseText);
+        movies.forEach(m=>{
+            let div = document.createElement("div");
+            div.innerText = m.title;
+            output.appendChild(div);
+        });
+    });
+
+    xhr.open("GET", url);
+    xhr.send();
+}
+
+click.subscribe(
+    e => load("movies.json"),
     e => console.log(e),
     () => console.log("Complete")
+
 );
+
