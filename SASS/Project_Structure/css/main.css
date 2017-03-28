@@ -1,4 +1,9 @@
 body {
-  background-color: blue; }
+  font-family: sans-serif;
+  color: #222;
+  background-color: #eee; }
+
+#header {
+  height: 60px; }
 
 /*# sourceMappingURL=main.css.map */

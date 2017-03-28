@@ -1,3 +1,19 @@
+$text-color: #222;
+$header-height: 60px;
+
 body{
-  background-color: blue;
+  font-family:sans-serif;
+  color: $text-color;
+  background-color: #eee;
+}
+
+#header{
+  height: $header-height;
+
+  #main-menu{
+
+  }
+  #logo{
+
+  }
 }
