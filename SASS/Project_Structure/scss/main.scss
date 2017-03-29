@@ -12,6 +12,21 @@
   }
 }
 
+@mixin rounded{
+  border-radius: 6px;
+}
+
+@mixin box{
+  @include rounded;
+  border: 1px solid #333;
+}
+
+@mixin fancy-link{
+  @include rounded;
+  border: 1px solid #333;
+}
+
+
 html {
   position: relative;
   min-height: 100%;
@@ -42,6 +57,7 @@ a{
 }
 
 #header{
+  @include box;
   height: $header-height;
   background-color: $theme-color;
 
