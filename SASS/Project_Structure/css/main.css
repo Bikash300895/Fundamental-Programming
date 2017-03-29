@@ -24,6 +24,9 @@ a {
 #header {
   border-radius: 6px;
   border: 1px solid #999;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
   height: 60px;
   background-color: #170a48; }
   #header #main-menu li {
