@@ -8,6 +8,9 @@ body {
   font-family: sans-serif;
   color: #222;
   background-color: #eee; }
+  @media only screen and (max-width: 960px) {
+    body {
+      font-size: 125%; } }
 
 h1, h2, h3, h4 {
   font-family: "Titillium Web", Georgia, serif; }
@@ -41,6 +44,10 @@ a {
   width: 960px;
   margin-left: auto;
   margin-right: auto; }
+  @media only screen and (max-width: 960px) {
+    #main {
+      width: auto;
+      max-width: 960px; } }
 
 footer {
   background-color: #ccf962;
