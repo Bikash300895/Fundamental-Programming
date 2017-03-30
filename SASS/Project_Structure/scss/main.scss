@@ -1,6 +1,9 @@
 @import "variable";
 @import "mixins";
 
+@include google-font("Alegreya+Sans");
+@include google-font("Titillium+Web");
+
 html {
   position: relative;
   min-height: 100%;
@@ -39,6 +42,7 @@ a{
   #main-menu{
     li{
       display: inline;
+      font-family: $heading-font;
     }
     a{
       color: $menu-item-color;

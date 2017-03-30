@@ -3,6 +3,11 @@
   color: #ffffff;
 }
 
+@mixin google-font($font){
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
 @mixin large-text{
   font:{
     size: 22px;
