@@ -15,7 +15,7 @@ body{
   color: $text-color;
   background-color: #eee;
 
-  @media only screen and (max-width: 960px) {
+  @include large-screens{
     font-size: 125%;
   }
 }
@@ -59,7 +59,7 @@ a{
 
 #main{
   width:$content-width;
-  @media only screen and (max-width: 960px) {
+  @include large-screens{
     width:auto;
     max-width: $content-width;
   }
