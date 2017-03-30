@@ -20,6 +20,8 @@ p {
 
 a {
   color: #f27731; }
+  a:hover {
+    color: #ca510d; }
 
 .warning-button {
   background-color: orange;
