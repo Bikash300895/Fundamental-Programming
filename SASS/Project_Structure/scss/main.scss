@@ -54,6 +54,10 @@ a{
     }
     a{
       color: $menu-item-color;
+      padding:6px 8px;
+      border-bottom: 1px solid transparentize(#efefef, 1);
+      transition: border-bottom 1s;
+      trantition-timing-function: ease-in-out;
     }
   }
   #logo{
