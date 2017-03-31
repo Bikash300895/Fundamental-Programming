@@ -1,5 +1,6 @@
-@import "Partials/_variable";
-@import "Partials/_mixins";
+@import "Partials/variable";
+@import "Partials/functinos";
+@import "Partials/mixins";
 
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");
@@ -80,10 +81,22 @@ a{
   margin-right: auto;
 
   #content{
-
+    float: left;
+    width:6*$col;
   }
   #sidebar{
+    float: right;
+    width: 2*$col;
 
+    li {
+      list-style-type: none;
+      padding: em(16px) em(20px);
+      border-bottom: 1px dashed #999;
+
+      &:hover{
+        background-color: #efefef;
+      }
+    }
   }
 }
 
