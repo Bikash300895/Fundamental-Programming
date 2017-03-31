@@ -53,11 +53,16 @@ a{
       font-family: $heading-font;
     }
     a{
+      text-decoration: none;
       color: $menu-item-color;
       padding:6px 8px;
-      border-bottom: 1px solid transparentize(#efefef, 1);
+      border-bottom: 1px solid transparentize(#fefefe, 1);
       transition: border-bottom 1s;
       trantition-timing-function: ease-in-out;
+
+      &:hover{
+        border-bottom: 1px solid opacify(#fefefe, .5);
+      }
     }
   }
   #logo{

@@ -42,11 +42,14 @@ a {
     display: inline;
     font-family: "Titillium Web", Georgia, serif; }
   #header #main-menu a {
+    text-decoration: none;
     color: white;
     padding: 6px 8px;
-    border-bottom: 1px solid rgba(239, 239, 239, 0);
+    border-bottom: 1px solid rgba(254, 254, 254, 0);
     transition: border-bottom 1s;
     trantition-timing-function: ease-in-out; }
+    #header #main-menu a:hover {
+      border-bottom: 1px solid #fefefe; }
 
 #main {
   width: 960px;
