@@ -4,6 +4,13 @@ html {
   position: relative;
   min-height: 100%; }
 
+.error, .critical-error {
+  color: red; }
+
+.critical-error {
+  bottom: 1px;
+  font-weight: bold; }
+
 body {
   font-family: sans-serif;
   color: #222;

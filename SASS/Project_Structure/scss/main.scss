@@ -10,6 +10,16 @@ html {
   min-height: 100%;
 }
 
+.error{
+  color:red;
+}
+
+.critical-error{
+  @extend .error;
+  bottom: 1px;
+  font-weight: bold;
+}
+
 
 body{
   font-family:sans-serif;
