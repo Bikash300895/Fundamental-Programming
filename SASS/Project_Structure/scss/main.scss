@@ -5,6 +5,15 @@
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");
 
+%highlight{
+  font-style: italic;
+}
+
+.sub-title{
+  @extend %highlight;
+  font-size: em(20px);
+}
+
 html {
   position: relative;
   min-height: 100%;
