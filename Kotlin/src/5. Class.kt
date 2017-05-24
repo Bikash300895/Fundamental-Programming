@@ -1,5 +1,9 @@
 class Hero{
     var nickName: String = "";
+
+    fun findSquare(a: Int): Int{
+        return a*a;
+    }
 }
 
 fun main(args: Array<String>){
@@ -7,4 +11,5 @@ fun main(args: Array<String>){
     spidy.nickName = "Spidy";
 
     println(spidy.nickName)
+    println(spidy.findSquare(5))
 }
