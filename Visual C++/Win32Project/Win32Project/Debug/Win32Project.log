@@ -1,0 +1,5 @@
+﻿  GT_HelloWorldWin32.cpp
+d:\projects\fundamental programming\visual c++\win32project\win32project\gt_helloworldwin32.cpp(37): warning C4302: 'type cast': truncation from 'LPWSTR' to 'WORD'
+d:\projects\fundamental programming\visual c++\win32project\win32project\gt_helloworldwin32.cpp(42): warning C4302: 'type cast': truncation from 'LPWSTR' to 'WORD'
+  Win32Project.vcxproj -> D:\PROJECTS\Fundamental Programming\Visual C++\Win32Project\Debug\Win32Project.exe
+  Win32Project.vcxproj -> D:\PROJECTS\Fundamental Programming\Visual C++\Win32Project\Debug\Win32Project.pdb (Partial PDB)
