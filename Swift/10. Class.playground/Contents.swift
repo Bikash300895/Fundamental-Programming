@@ -19,6 +19,16 @@ print(shape.simpleSecription())
 class Square: Shape {
     var sideLength: Double
     
+    // Data encaptulation
+    var parimeter: Double {
+        get {
+            return 3.0 * sideLength
+        }
+        set {
+            sideLength = newValue / 3.0
+        }
+    }
+    
     init(sideLength: Double, name:String) {
         self.sideLength = sideLength
         super.init(name: name)
@@ -39,4 +49,6 @@ let sqr = Square(sideLength: 2.3, name: "test square")
 print(sqr.area())
 print(sqr.simpleSecription())
 
-
+print(sqr.parimeter)
+sqr.parimeter = 7
+print(sqr.sideLength)
