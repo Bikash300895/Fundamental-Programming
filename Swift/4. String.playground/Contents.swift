@@ -14,6 +14,9 @@ if let name = optionalName {
 print(greeting)
 
 
-
+// Default value
+let nickname: String? = "nil"
+let fullname = "Shuvendu Bikash"
+let info = "Hi \(nickname ?? fullname)"
 
 
