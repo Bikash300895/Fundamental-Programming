@@ -9,3 +9,11 @@ else
 fi
 
 
+echo "Enter a number"
+read number
+
+if [ $number != 1 ]
+then
+    echo "You entered 1"
+fi
+
