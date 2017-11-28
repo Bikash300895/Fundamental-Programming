@@ -2,7 +2,11 @@
 /Java/JavaFx/build/
 /Java/JavaFx/dist/
 
+
 .DS_store
 
 
+
+
+.idea/
 

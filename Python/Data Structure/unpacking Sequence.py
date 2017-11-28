@@ -1,0 +1,11 @@
+p = (4,5)
+
+x,y = p
+print(x)
+print(y)
+
+
+data = [ 'ACME', 50, 91.1, (2012, 12, 21) ]
+
+w,_,y,_ = data
+print(y)
