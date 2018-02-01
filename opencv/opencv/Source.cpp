@@ -34,12 +34,26 @@ void im_show() {
 	
 }
 
+void simpleTransform()
+{
+	Mat img = imread("lena.jpg");
+
+	imshow("lena", img);
+
+	Mat out;
+	GaussianBlur(img, out, Size(5, 5), 3, 3);
+
+	imshow("out", out);
+}
+
 
 int main(int argc, char** argv)
 {
 	
 	//load_and_show_image();
-	im_show();
+	//im_show();
+	simpleTransform();
 
+	waitKey(0);
 	return 0;
 }
