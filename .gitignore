@@ -3,10 +3,10 @@
 /Java/JavaFx/dist/
 
 
-.DS_store
-
-
-
+*.DS_Store
+.DS_Store
+*.db
+.vs/
 
 .idea/
 
