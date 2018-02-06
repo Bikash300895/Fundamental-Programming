@@ -47,14 +47,54 @@ void simpleTransform()
 }
 
 
-void image_info()
+void image_info(Mat img)
 {
-	Mat img = imread("lena.jpg");
+	//Mat img = imread("lena.jpg");
 	cout << "total " << img.total() << endl;
 	cout << "type "<<img.type() << endl;
 	cout << "size "<<img.size() << endl;
 	cout << "channels "<<img.channels() << endl;
 	cout << "depth "<<img.depth() << endl;
+}
+
+void _gamma_transform(Mat img, String name, double c, double gamma)
+{
+	Mat gm = img.clone();
+	int row = gm.size[0];
+	int col = gm.size[1];
+
+	for (int i = 0; i<row; i++)
+	{
+		for (int j = 0; j<col; j++)
+		{
+			gm.at<uchar>(i, j) = uchar(c * pow(gm.at<uchar>(i, j), gamma));
+		}
+	}
+
+	imshow(name, gm);
+	waitKey(0);
+}
+
+void gamma_transform()
+{
+	Mat img = imread("eye.png");
+	image_info(img);
+	imshow("eye", img);
+	waitKey(0);
+
+	cvtColor(img, img, CV_BGR2GRAY);
+
+	// Values of c and gamma
+	double c = 1;
+	double gamma = 0.5;
+
+	_gamma_transform(img,"0.5", 1, 0.5);
+	_gamma_transform(img,"0.9", 1, 0.9);
+
+	_gamma_transform(img, "10, 0.5", 10, 0.5);
+	_gamma_transform(img, "10 0.9", 10, 0.9);
+	
+	
 }
 
 int main(int argc, char** argv)
@@ -63,7 +103,8 @@ int main(int argc, char** argv)
 	//load_and_show_image();
 	//im_show();
 	//simpleTransform();
-	image_info();
+	//image_info();
+	gamma_transform();
 
 	waitKey(0);
 	getchar();
