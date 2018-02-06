@@ -67,7 +67,13 @@ void _gamma_transform(Mat img, String name, double c, double gamma)
 	{
 		for (int j = 0; j<col; j++)
 		{
-			gm.at<uchar>(i, j) = uchar(c * pow(gm.at<uchar>(i, j), gamma));
+			if (gamma < 1) {
+				gm.at<uchar>(i, j) = uchar(c * pow(gm.at<uchar>(i, j), gamma));
+			}
+			else {
+				gm.at<uchar>(i, j) = uchar((c * pow(gm.at<uchar>(i, j), gamma))/pow(255, gamma-1));
+			}
+			
 		}
 	}
 
@@ -77,12 +83,12 @@ void _gamma_transform(Mat img, String name, double c, double gamma)
 
 void gamma_transform()
 {
-	Mat img = imread("eye.png");
+	Mat img = imread("lena.jpg");
 	image_info(img);
 	imshow("eye", img);
-	waitKey(0);
 
 	cvtColor(img, img, CV_BGR2GRAY);
+	imshow("gray original", img);
 
 	// Values of c and gamma
 	double c = 1;
@@ -93,6 +99,9 @@ void gamma_transform()
 
 	_gamma_transform(img, "10, 0.5", 10, 0.5);
 	_gamma_transform(img, "10 0.9", 10, 0.9);
+
+	_gamma_transform(img, "1 2.0", 1, 2.0);
+	_gamma_transform(img, "1 10.0", 1, 10.0);
 	
 	
 }
