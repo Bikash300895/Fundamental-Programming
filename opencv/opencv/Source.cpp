@@ -87,7 +87,7 @@ void gamma_transform()
 {
 	Mat img = imread("lena.jpg");
 	image_info(img);
-	imshow("eye", img);
+	imshow("lena", img);
 
 	cvtColor(img, img, CV_BGR2GRAY);
 	imshow("gray original", img);
@@ -108,6 +108,41 @@ void gamma_transform()
 	
 }
 
+void intensity_slicing() {
+	Mat img = imread("lena.jpg");
+	image_info(img);
+	cvtColor(img, img, CV_BGR2GRAY);
+	
+	imshow("lena", img);
+
+	Mat des = img.clone();
+	int x1 = 90, y1 = 70, x2 = 200, y2 = 220;
+	cin>>x1>>y1>>x2>>y2;
+
+	int row = img.size[0];
+	int col = img.size[1];
+
+	for (int i = 0; i < row; i++) {
+		for (int j = 0; j < col; j++) {
+			if (img.at<uchar>(i, j) <= x1) {
+				double slope = (double)y1 / x1;
+				des.at<uchar>(i, j) = (uchar)(slope * (double)img.at<uchar>(i, j));
+			}
+			else if (img.at<uchar>(i, j) <= x2) {
+				double slope = (double)(y2 - y1) / (x2 - x1);
+				des.at<uchar>(i, j) = (uchar)(slope * (double)img.at<uchar>(i, j));
+			}
+			else {
+				double slope = (double)(255 - y2) / (255 - x2);
+				des.at<uchar>(i, j) = (uchar)(slope * (double)img.at<uchar>(i, j));
+			}
+		}
+	}
+
+	imshow("intensity shifted image", des);
+
+}
+
 int main(int argc, char** argv)
 {
 	
@@ -115,7 +150,8 @@ int main(int argc, char** argv)
 	//im_show();
 	//simpleTransform();
 	//image_info();
-	gamma_transform();
+	//gamma_transform();
+	intensity_slicing();
 
 	waitKey(0);
 	getchar();
