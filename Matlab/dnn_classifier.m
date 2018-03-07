@@ -1,54 +1,60 @@
-%% loading the data
-digitDatasetPath = fullfile(matlabroot,'toolbox','nnet','nndemos',...
-    'nndatasets','DigitDataset');
-digitData = imageDatastore(digitDatasetPath,...
-    'IncludeSubfolders',true,'LabelSource','foldernames');
+% Creating a simple deep learning classifier
+%% Load and explore image data
+digitDatasetPath = fullfile(matlabroot, 'toolbox', 'nnet', 'nndemos', 'nndatasets', 'DigitDataset');
+digitData = imageDatastore(digitDatasetPath, 'IncludeSubfolders',true,'LabelSource','foldernames');
 
+
+%%
+% Display some of the images
 figure;
-perm = randperm(10000,20);
+perm = randperm(10000, 20);
 for i = 1:20
     subplot(4,5,i);
     imshow(digitData.Files{perm(i)});
 end
 
-%% prepare data for training
-% see the count of data
-labelCount = countEachLabel(digitData);
 
-img = readimage(digitData,1);
-size(img)
-
-trainNumFiles = 750;
-[trainDigitData,valDigitData] = splitEachLabel(digitData,trainNumFiles,'randomize');
+%%
+%check the number of digits in each category
+CountLabel = digitData.countEachLabel;
 
 
-%% Defining the model
+%%
+% we have to specify the size of the images in input layers of the network
+% let's find the size of the images
+img = readimage(digitData, 1);
+size(img);
 
+
+%% Specify the train and test set
+trainingNumFiles = 750;
+rng(1) % setting random seed for reproductivity
+[trainingDigitData, testDigitData] = splitEachLabel(digitData, trainingNumFiles, 'randomize');
+
+
+%% Defining the network
 layers = [
-    imageInputLayer([28 28 1])
-
-    convolution2dLayer(3,16,'Padding',1)
+    imageInputLayer([28, 28, 1])
+    fullyConnectedLayer(100)
     reluLayer
-
-    maxPooling2dLayer(2,'Stride',2)
-
-    convolution2dLayer(3,32,'Padding',1)
-    %batchNormalizationLayer
-    reluLayer
-
-    maxPooling2dLayer(2,'Stride',2)
-
-    convolution2dLayer(3,64,'Padding',1)
-    %batchNormalizationLayer
-    reluLayer
-
+    
     fullyConnectedLayer(10)
     softmaxLayer
-    classificationLayer];
+    classificationLayer()
+];
+
+options = trainingOptions('sgdm', 'MaxEpochs', 15, 'InitialLearnRate', 0.0001);
+
+% training the models
+convnet = trainNetwork(trainingDigitData, layers, options);
 
 
-options = trainingOptions('sgdm',... 
-    'MaxEpochs',3);
+%% Classify the Images in the Test Data and Compute Accuracy
+% Run the trained network on the test set that was not used to train the
+% network and predict the image labels (digits).
+YTest = classify(convnet,testDigitData);
+TTest = testDigitData.Labels;
 
-
-net = trainNetwork(trainDigitData,layers,options);
+%% 
+% Calculate the accuracy. 
+accuracy = sum(YTest == TTest)/numel(TTest)
